@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Manga Scantrad Image Scraper",
+    "version": "1.0",
+    "description": "Scrapes and downloads images from Manga-Scantrad pages.",
+    "permissions": [
+      "activeTab",
+      "downloads",
+      "tabs"
+    ],
+    "browser_action": {
+    "default_title": "Scrape Images",
+    "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://manga-scantrad.io/manga/*"],
+        "js": ["content.js"]
+    }
+    ]
+  }
+  

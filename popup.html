@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manga Scraper Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    input { width: 100%; box-sizing: border-box; }
+    button { margin-top: 10px; width: 100%; }
+    button:disabled { background-color: #ccc; }
+    #status { margin-top: 10px; color: red; }
+  </style>
+</head>
+<body>
+  <h3>Manga Scraper Settings</h3>
+  <label>
+    Download Folder:
+    <input type="text" id="downloadFolder" placeholder="Tome 1">
+  </label>
+  <button id="scrapeBtn">Scrape Images</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
